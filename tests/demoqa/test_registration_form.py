@@ -6,8 +6,8 @@ from selene import have, by
 def test_successful(setup_chrome):
     browser = setup_chrome
 
-    first_name = "Alex"
-    last_name = "Egorov"
+    first_name = "Leo"
+    last_name = "Dicaprio"
 
     with allure.step("Открыть форму регистрации"):
         browser.open("https://demoqa.com/automation-practice-form")
@@ -20,7 +20,7 @@ def test_successful(setup_chrome):
         browser.element("#lastName").set_value(last_name)
         browser.element("#userEmail").set_value("alex@egorov.com")
         browser.element("#genterWrapper").element(by.text("Other")).click()
-        browser.element("#userNumber").set_value("1231231230")
+        browser.element("#userNumber").set_value("9998888999")
         # browser.element("#dateOfBirthInput").click()
         # browser.element(".react-datepicker__month-select").s("July")
         # browser.element(".react-datepicker__year-select").selectOption("2008")
